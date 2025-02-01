@@ -42,7 +42,7 @@ export default function BMICalculator() {
                 type="number"
                 step="0.1"
                 min="0"
-                placeholder="Weight"
+                placeholder="Poids"
                 value={weight}
                 onChange={(e) => setWeight(e.target.value)}
               />
@@ -57,7 +57,7 @@ export default function BMICalculator() {
                 type="number"
                 step="1"
                 min="0"
-                placeholder="Height"
+                placeholder="Taille"
                 value={height}
                 onChange={(e) => setHeight(e.target.value)}
               />

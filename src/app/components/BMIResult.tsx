@@ -48,7 +48,7 @@ export default function BMIResult({ bmi, onReset }: BMIResultProps) {
 
   return (
     <div className="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <h2 className="text-2xl font-bold mb-4">Valeur de l'IMC</h2>
+      <h2 className="text-2xl font-bold mb-4">Valeur de l&apos;IMC</h2>
       <p className="text-4xl font-bold mb-2">{bmi}</p>
       <p className="text-xl mb-4">{category}</p>
       <div className="flex justify-center mt-8 space-x-4">
@@ -69,7 +69,7 @@ export default function BMIResult({ bmi, onReset }: BMIResultProps) {
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => router.push("/history")}
         >
-          Voir l'historique
+          Voir l&apos;historique
         </button>
       </div>
     </div>
