@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link href="/" className="bg-white text-gray-700 p-2 rounded-full shadow-md hover:bg-gray-50 transition-colors">
           <Home size={24} />
         </Link>
-        <h1 className="text-gray-700 text-2xl font-semibold">BMI Calculator</h1>
+        <h1 className="text-gray-700 text-2xl font-semibold">Calculatrice d'IMC</h1>
         <Link
           href="/login"
           className="bg-white text-gray-700 p-2 rounded-full shadow-md hover:bg-gray-50 transition-colors"

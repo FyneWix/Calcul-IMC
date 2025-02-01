@@ -33,8 +33,8 @@ export default function BMICalculator() {
         <div className="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4 flex space-x-4">
             <div className="w-1/2">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="weight">
-                Weight (kg)
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="poids">
+                Poids (kg)
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -48,8 +48,8 @@ export default function BMICalculator() {
               />
             </div>
             <div className="w-1/2">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="height">
-                Height (cm)
+              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="taille">
+                Taille (cm)
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -70,7 +70,7 @@ export default function BMICalculator() {
               type="button"
               onClick={calculateBMI}
             >
-              Calculate
+              Calculer
             </button>
           </div>
         </div>

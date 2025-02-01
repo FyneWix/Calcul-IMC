@@ -28,14 +28,14 @@ export default function HistoryPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">BMI History</h1>
+      <h1 className="text-3xl font-bold mb-6">Historique des IMC</h1>
       <div className="bg-white shadow-md rounded-lg overflow-hidden">
         <table className="min-w-full">
           <thead className="bg-gray-100">
             <tr>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">BMI</th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">IMC</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Catégorie</th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">

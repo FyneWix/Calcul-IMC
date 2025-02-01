@@ -13,13 +13,13 @@ export default function BMIResult({ bmi, onReset }: BMIResultProps) {
   const router = useRouter()
 
   const getBMICategory = (bmi: number) => {
-    if (bmi < 16.5) return "Undernutrition"
-    if (bmi < 18.5) return "Thinness"
-    if (bmi < 25) return "Normal weight"
-    if (bmi < 30) return "Overweight"
-    if (bmi < 35) return "Moderate obesity"
-    if (bmi < 40) return "Severe obesity"
-    return "Morbid obesity"
+    if (bmi < 16.5) return "Dénutrition"
+    if (bmi < 18.5) return "Maigreur"
+    if (bmi < 25) return "Poids normal"
+    if (bmi < 30) return "Surpoids"
+    if (bmi < 35) return "Obésité modérée"
+    if (bmi < 40) return "Obésité sévère"
+    return "Obésité morbide"
   }
 
   const category = getBMICategory(bmi)
@@ -48,7 +48,7 @@ export default function BMIResult({ bmi, onReset }: BMIResultProps) {
 
   return (
     <div className="bg-gray-100 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <h2 className="text-2xl font-bold mb-4">Your BMI Result</h2>
+      <h2 className="text-2xl font-bold mb-4">Valeur de l'IMC</h2>
       <p className="text-4xl font-bold mb-2">{bmi}</p>
       <p className="text-xl mb-4">{category}</p>
       <div className="flex justify-center mt-8 space-x-4">
@@ -56,20 +56,20 @@ export default function BMIResult({ bmi, onReset }: BMIResultProps) {
           className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={onReset}
         >
-          Calculate Again
+          Recalculer
         </button>
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={handleSave}
           disabled={isLoading}
         >
-          {isLoading ? "Saving..." : "Save BMI"}
+          {isLoading ? "Sauvegarde..." : "Sauvegarder"}
         </button>
         <button
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => router.push("/history")}
         >
-          View History
+          Voir l'historique
         </button>
       </div>
     </div>
