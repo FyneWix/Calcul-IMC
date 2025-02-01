@@ -19,3 +19,14 @@ export async function POST(request: Request) {
   }
 }
 
+export async function GET() {
+  try {
+    const records = await prisma.bmiRecord.findMany({
+      orderBy: { createdAt: "desc" }, // Trie par date décroissante
+    })
+    return NextResponse.json(records, { status: 200 })
+  } catch (error) {
+    console.error("Error fetching BMI history:", error)
+    return NextResponse.json({ error: "Failed to fetch BMI history" }, { status: 500 })
+  }
+}
